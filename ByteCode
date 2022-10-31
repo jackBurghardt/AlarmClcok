@@ -1,0 +1,12 @@
+@external
+def AlarmClock (day:uint256, vacation: bool) -> (String [5]):
+    if (day >0 and day < 6):
+        if (vacation == True):
+            return "10:00"
+        else:
+            return "07:00"
+    else:
+        if (vacation == True):
+            return "  off"
+        else :
+            return "10:00"
